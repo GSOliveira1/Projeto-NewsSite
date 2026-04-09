@@ -75,10 +75,24 @@ nav a:hover{
 
 #side{
     width: 400px;
+    padding: 10px;
+}
+
+#side div{
+    border: 1px solid red;
+    height: 400px;
 }
 
 #main{
     width: 1200px;
+    display: grid;
+    grid-template-columns: 550px 550px;
+    grid-template-rows: 420px 420px;
+    column-gap: 20px;
+}
+
+.item-grid{
+    border: 1px solid black;
 }
 
 /*RODAPÉ*/
