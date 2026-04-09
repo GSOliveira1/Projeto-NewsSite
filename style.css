@@ -1,3 +1,9 @@
+/*  
+    Cores
+    #2C5273 - dusk blue
+    #DB2B39 - scarlet rush
+/*
+
 /*Configurações gerais*/
 
 *{
@@ -12,7 +18,7 @@ body{
 /*HEADER*/
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #2C5273;
     padding: 1.5em 1.5em;
@@ -46,7 +52,44 @@ nav ul li a{
 }
 
 nav a:hover{
-    background: #F08700;
+    background: #c20313;
 }
 
 /*CONTEÚDO*/
+#content{
+    width: 1600px;
+    height: 900px;
+    margin: 10px auto;
+    border: 1px solid blue;
+    display: flex;
+    padding: 10px;
+}
+
+#content div{
+    margin: 10px;
+}
+
+#side, #main{
+    border: 1px solid black;
+}
+
+#side{
+    width: 400px;
+}
+
+#main{
+    width: 1200px;
+}
+
+/*RODAPÉ*/
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 1.5em;
+    background-color: #2C5273;
+    color: white;
+}
+
+footer span{
+    font-size: 2rem;
+}
