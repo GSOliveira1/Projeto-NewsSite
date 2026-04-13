@@ -12,6 +12,7 @@
 }
 
 body{
+    width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -106,4 +107,98 @@ footer{
 
 footer span{
     font-size: 2rem;
+}
+
+/* ESTILOS PARA TELAS <= 1280px*/
+@media screen and (max-width: 1280px){
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #2C5273;
+        padding: 1.0em 1.0em;
+    }
+
+    #header-logo{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav{
+        padding-right: 3em;
+    }
+
+    nav ul{
+        list-style-type: none;
+        float: left;
+    }
+
+    nav ul li{
+        float: left;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        background-color: #DB2B39;
+        padding: 0.5em 1.0em;
+    }
+
+    nav a:hover{
+        background: #c20313;
+    }
+    #content{
+        width: 1100px;
+        height: 700px;
+        margin: 10px auto;
+        border: 1px solid blue;
+        display: flex;
+        padding: 10px;
+    }
+    #content div{
+        margin: 10px;
+    }
+
+    #side, #main{
+        border: 1px solid black;
+    }
+
+    #side{
+        width: 300px;
+        padding: 20px;
+    }
+
+    #side div{
+        border: 1px solid red;
+        width: 280px;
+        height: 300px;
+    }
+
+    #main{
+        width: 700px;
+        display: grid;
+        grid-template-columns: 325px 325px;
+        grid-template-rows: 310px 310px;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .item-grid{
+        border: 1px solid black;
+    }
+    footer{
+        width: 100vw;
+        text-align: center;
+        margin-top: 20px;
+        padding: 1.0em;
+        background-color: #2C5273;
+        color: white;
+    }
+
+    footer span{
+        font-size: 1.5rem;
+    }    
 }
