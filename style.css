@@ -77,11 +77,64 @@ nav a:hover{
 #side{
     width: 400px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #side div{
-    border: 1px solid red;
     height: 400px;
+}
+
+#interviews-list{
+    list-style-type: none;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+#interviews-list li{
+    flex-grow: 1;
+    background-color: white;
+}
+
+#interviews-list li:hover{
+    background-color: #c20313;
+    color: white;
+}
+
+#interviews-list li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+form{
+    background-color: white;
+    padding: 10px;
+}
+
+label{
+    display: block;
+}
+
+input{
+    margin-bottom: 10px;
+    height: 25px;
+}
+
+#register-button{
+    display: block;
+    background-color: #DB2B39;
+    color: white;
+    padding: 0.5em;
+    border: none;
+}
+
+#register-button:hover{
+    background-color: #c20313;
 }
 
 #main{
@@ -89,11 +142,36 @@ nav a:hover{
     display: grid;
     grid-template-columns: 550px 550px;
     grid-template-rows: 420px 420px;
-    column-gap: 20px;
+    justify-content: space-around;
+    align-content: center;
 }
 
 .item-grid{
     border: 1px solid black;
+    background-image: url(images/fundo-caixa.png);
+}
+
+#last-interview{
+    background-color: white;
+}
+
+h3{
+    padding: 0.5em;
+    text-align: center;
+    background-color: #2C5273;
+    color: white;
+}
+
+h4{
+    padding: 0.2em;
+    text-align: center;
+    background-color: #c20313;
+    color: white;
+    display: inline-block;
+}
+
+.leia-mais{
+    color: #DB2B39;
 }
 
 /*RODAPÉ*/

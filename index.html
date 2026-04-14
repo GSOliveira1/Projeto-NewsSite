@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Notícias Cidade</title>
 </head>
+
 <body>
     <header>
         <div id="header-logo">
@@ -26,24 +28,54 @@
 
     <div id="content">
         <div id="side">
-            <div id="interviews">
+            <div id="interviews" class="item-grid">
                 <h3>Entrevistas</h3>
+                <ul id="interviews-list">
+                    <li><a href="">José Almeida</a></li>
+                    <li><a href="">Felipe Silva</a></li>
+                    <li><a href="">Renato Rodrigues</a></li>
+                    <li><a href="">Abelardo Silveira</a></li>
+                    <li><a href="">André Carlos</a></li>
+                    <li><a href="">Márcio Mello</a></li>
+                    <li><a href="">João Pedro</a></li>
+                    <li><a href="">Fernando Weiss</a></li>
+                </ul>
             </div>
-            <div id="contact">
+            <div id="contact" class="item-grid">
                 <h3>Contato</h3>
+                <div>
+                    <h4>Entre em contato conosco!</h4>
+                    <form id="contact-form">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name" placeholder="Seu nome">
+                        <label for="cellphone">Telefone:</label>
+                        <input type="text" name="cellphone" id="cellphone" placeholder="(DDD)91234-5678">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="seu@email.com">
+                        <input type="button" value="Cadastrar" id="register-button">
+                    </form>
+                </div>
             </div>
         </div>
         <div id="main">
             <div class="item-grid">
                 <h3>Última entrevista</h3>
+                <div id="last-interview">
+                    <h4>Entrevista com Felipe Silva</h4>
+                    <img src="images/doutor.jpg" alt="Doutor" width="500px" height="275px">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p><a href="" class="leia-mais">Leia mais!</a></p>
+                </div>
+            </div>
+            <div class="item-grid">
+                <h3>Destaque</h3>
             </div>
             <div class="item-grid">
                 <h3>Mundo</h3>
             </div>
             <div class="item-grid">
-                <h3>Brasil</h3>
+                <h3>Notícias recentes</h3>
             </div>
-            <div class="item-grid">DIV 4</div>
         </div>
     </div>
 
@@ -51,4 +83,5 @@
         <span>Todos os direitos reservados</span>
     </footer>
 </body>
+
 </html>
